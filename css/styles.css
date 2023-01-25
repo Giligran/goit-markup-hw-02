@@ -1,11 +1,13 @@
 /* global styles */
 body {
     background-color: #F4F4FD;
-    font-family: 'Releway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    color: #434455;
-    margin: 0 auto;
+    font-family: 'Roboto', 'Releway', sans-serif;
+    color: #434455}
+:root {
+   --main-color-text: color: #434455; 
+   --header-color: color: #2E2F42;
 }
+
 /* utilitarian styles */
 .link {
     text-decoration: none;
@@ -74,10 +76,11 @@ body {
         height: 600px;
 }
 .hero-title {
+    box-sizing: border-box;
     padding-top: 260px;
     margin-left: 473px;
     width: 500px;
-        height: 120px;
+    height: 120px;
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -90,62 +93,4 @@ body {
         letter-spacing: 0.02em;
     
         color: #FFFFFF;
-}
-.hero-btn {
-    padding-top: 48px;
-    margin-left: 636px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-    width: 169px;
-    height: 56px;
-    /* IRIS */
-
-    background: #4D5AE5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    /* Order Service */
-    
-    
-        width: 169px;
-        height: 56px;
-    
-        /* Button Text */
-        padding-top: 16px;
-        padding-left: 32px;
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.33;
-        /* identical to box height, or 150% */
-    
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.04em;
-    
-        color: #FFFFFF;
-    
-    
-    
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-}
-.hero-btn:hover,
-.hero-btn:focus {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-    width: 169px;
-    height: 56px;
-    
-        /* OCEAN */
-
-    background: #404BBF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 }
