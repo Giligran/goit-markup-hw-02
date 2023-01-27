@@ -1,11 +1,14 @@
+:root {
+    --main-color-text: #434455;
+    --header-color: #2E2F42;
+    --primiry-background:  #2E2F42;
+    --secondary-background:  #F4F4FD;
+}
 /* global styles */
 body {
     background-color: #F4F4FD;
     font-family: 'Roboto', 'Releway', sans-serif;
-    color: #434455}
-:root {
-   --main-color-text: color: #434455; 
-   --header-color: color: #2E2F42;
+    color: var(--header-color);
 }
 
 /* utilitarian styles */
@@ -16,7 +19,7 @@ body {
     list-style: none;
 }
 /* header styles */
-.header-logo, .footer-logo {
+.header-logo {
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -25,7 +28,18 @@ body {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;    
-    color: #2E2F42;
+    color: var(--header-color);
+}
+.footer-logo{
+    font-family: 'Raleway'; 
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-background);
 }
 .header-logo .logo,
 .footer-logo .logo {
@@ -71,7 +85,7 @@ body {
 }
 /* main sections styles */
 .hero {
-    background: #2E2F42;
+    background: var(--primiry-background);
     width: 1440px;
         height: 600px;
 }
@@ -93,4 +107,28 @@ body {
         letter-spacing: 0.02em;
     
         color: #FFFFFF;
+}
+
+.feutures-subtitle,
+.portfolio-subtitle,
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.feutures-text,
+.team-text,
+.portfolio-description,
+.navigation-link {
+    color: var(--main-color-text);
+}
+.footer {
+    background-color: var(--primiry-background);
+}
+
+.footer p {
+    line-height: 1.5;  
+    color: #E7E9FC;
 }
