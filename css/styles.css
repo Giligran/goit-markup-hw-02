@@ -68,8 +68,6 @@ body {
         color: #4D5AE5;
 }
 .navigation-link {  
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.33;
@@ -77,9 +75,7 @@ body {
         color: #2E2F42;
 }
 .contact-link {
-        font-family: 'Roboto';
         font-style: normal;
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.33;   
         letter-spacing: 0.02em;
@@ -88,9 +84,7 @@ body {
 
 .contact-link:hover,
 .contact-link:focus {   
-        font-family: 'Roboto';
         font-style: normal;
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.33;    
         letter-spacing: 0.02em;
@@ -99,27 +93,61 @@ body {
 /* main sections styles */
 .hero {
     background: var(--primiry-background);
-    width: 1440px;
-        height: 600px;
 }
 .hero-title {
     box-sizing: border-box;
-    padding-top: 260px;
-    margin-left: 473px;
-    width: 500px;
-    height: 120px;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.hero-btn {
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.list-btn {
+    flex-direction: row;
+    justify-content: center;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
 
-        /* or 107% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    /* IRIS */
+
+    color: #4D5AE5;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
     
-        text-align: center;
-        letter-spacing: 0.02em;
-    
-        color: #FFFFFF;
 }
 
 .feutures-subtitle,
