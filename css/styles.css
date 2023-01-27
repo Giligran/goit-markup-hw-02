@@ -99,45 +99,28 @@ body {
     color: #FFFFFF;
 }
 .hero-btn {
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background: #4D5AE5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
     background: #404BBF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 }
 .list-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
 
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
-    border-radius: 4px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    
+    color:  #4D5AE5;
+    background: #F4F4FD;    
 }
 .list-btn:hover,
 .list-btn:focus{
