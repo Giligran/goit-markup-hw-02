@@ -5,6 +5,11 @@
     --secondary-background:  #F4F4FD;
 }
 /* global styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 body {
     background-color: #F4F4FD;
     font-family: 'Roboto', 'Releway', sans-serif;
